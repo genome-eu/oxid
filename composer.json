@@ -1,0 +1,30 @@
+{
+    "name": "dbyvalin/genome-oxid-module",
+    "description": "This is the Genome module for the OXID eShop.",
+    "type": "oxideshop-module",
+    "keywords": ["oxid", "modules", "eShop", "Genome"],
+    "homepage": "https://genome.eu",
+    "license": [
+        "GPL-3.0-only",
+        "proprietary"
+    ],
+    "extra": {
+        "oxideshop": {
+            "target-directory": "genome"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "genome-eu/hpp": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Genome\\GenomeModule\\": "../../../source/modules/genome"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "prepend-autoloader": false
+    },
+    "version": "1.0.0" 
+}
